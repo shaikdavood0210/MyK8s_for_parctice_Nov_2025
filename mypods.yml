@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: k8s-pod
+  name: shaik-pod
 spec:
   containers:
-    - name: my-container
+    - name: shaik-container
       image: nginx
       ports:
         - containerPort: 80
