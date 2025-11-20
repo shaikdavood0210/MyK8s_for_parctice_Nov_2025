@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: myjavacontainer
-          image: davood/myk8sapp:v1
+          image: tomcat:9.0
           ports:
             - containerPort: 8080
