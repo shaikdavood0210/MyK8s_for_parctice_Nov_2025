@@ -3,7 +3,7 @@ kind: ReplicationController
 metadata:
   name: myjavaapp-rc
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     app: myjavaapp
   template:
@@ -12,7 +12,7 @@ spec:
         app: myjavaapp
     spec:
       containers:
-        - name: myjavacontainer
-          image: tomcat:9.0
+        - name: myjava-container
+          image: nginx:latest
           ports:
-            - containerPort: 8080
+            - containerPort: 80
