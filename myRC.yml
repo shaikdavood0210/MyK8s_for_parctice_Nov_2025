@@ -2,14 +2,17 @@ apiVersion: v1
 kind: ReplicationController
 metadata:
   name: myjavaapp-rc
+  version: "2.60.1"
 spec:
-  replicas: 1
+  replicas: 3
   selector:
     app: myjavaapp
+    version: "2.60.1"
   template:
     metadata:
       labels:
         app: myjavaapp
+        version: "2.60.1"
     spec:
       containers:
         - name: myjava-container
