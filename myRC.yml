@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
         - name: myjava-container
-          image: nginx:latest
+          image: nginx:1.27
           ports:
             - containerPort: 80
